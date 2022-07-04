@@ -8,10 +8,18 @@
         <servlet-name>webServlet</servlet-name>
         <servlet-class>cn.edu.guet.webServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>WeatherServlet</servlet-name>
+        <servlet-class>cn.edu.guet.WeatherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WeatherServlet</servlet-name>
+        <url-pattern>/getWeather.do</url-pattern>
+    </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>webServlet</servlet-name>
-        <url-pattern>/web</url-pattern>
+        <url-pattern>/web.html</url-pattern>
 <!--        url:地址 pattern:样式-->
     </servlet-mapping>
 </web-app>
