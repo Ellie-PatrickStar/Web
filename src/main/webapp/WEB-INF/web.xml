@@ -12,6 +12,22 @@
         <servlet-name>WeatherServlet</servlet-name>
         <servlet-class>cn.edu.guet.WeatherServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ImageServlet</servlet-name>
+        <servlet-class>cn.edu.guet.ImageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>cn.edu.guet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImageServlet</servlet-name>
+        <url-pattern>/candy.jpg</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>WeatherServlet</servlet-name>
         <url-pattern>/getWeather.do</url-pattern>
