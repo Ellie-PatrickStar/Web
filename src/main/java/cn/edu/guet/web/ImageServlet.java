@@ -1,4 +1,4 @@
-package cn.edu.guet;
+package cn.edu.guet.web;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -13,7 +13,7 @@ public class ImageServlet extends HttpServlet {
 
         InputStream in = null;
         try {
-            in = Class.forName("cn.edu.guet.ImageServlet").getResourceAsStream("/candy.jpg");
+            in = Class.forName("cn.edu.guet.web.ImageServlet").getResourceAsStream("/candy.jpg");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }

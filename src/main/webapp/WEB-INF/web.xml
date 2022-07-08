@@ -6,19 +6,19 @@
   <display-name>Archetype Created Web Application</display-name>
     <servlet>
         <servlet-name>webServlet</servlet-name>
-        <servlet-class>cn.edu.guet.webServlet</servlet-class>
+        <servlet-class>cn.edu.guet.web.webServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>WeatherServlet</servlet-name>
-        <servlet-class>cn.edu.guet.WeatherServlet</servlet-class>
+        <servlet-class>cn.edu.guet.web.WeatherServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>ImageServlet</servlet-name>
-        <servlet-class>cn.edu.guet.ImageServlet</servlet-class>
+        <servlet-class>cn.edu.guet.web.ImageServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>cn.edu.guet.LoginServlet</servlet-class>
+        <servlet-class>cn.edu.guet.web.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
