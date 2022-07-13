@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>侧边栏</title>
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  <script src="./jquery.js"></script>
+
+  <style>
+    li {
+      list-style: none;
+    }
+    a {
+      width: 189px;
+      height: 36px;
+      display: block;
+      color: #5d5d5d;
+      text-decoration: none;
+      border: 1px solid black;
+      line-height: 36px;
+      /* 垂直居中 */
+    }
+    .fa {
+      font-family: 'FontAwesome';
+      font-weight: normal;
+      font-style: normal;
+      margin-left: 14px;
+      margin-right: 5px;
+    }
+    .submenu {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<ul class="menu">
+  <li>
+    <a href="#"><i class="fa-home fa"></i>首页</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa-user fa"></i>用户管理</a>
+    <ul class="submenu">
+      <li>
+        <a href="#">用户列表</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#"><i class="fa-user-o fa"></i>角色管理</a>
+    <ul class="submenu">
+      <li>
+        <a href="#">角色列表</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#"><i class="fa-bus fa"></i>权限管理</a>
+    <ul class="submenu">
+      <li>
+        <a href="#">权限列表</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#"><i class="fa-book fa"></i>文章管理</a>
+    <ul class="submenu">
+      <li>
+        <a href="#">文章列表</a>
+      </li>
+      <li>
+        <a href="#">文章分类</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#"><i class="fa-file-image-o fa"></i>轮播图管理</a>
+    <ul class="submenu">
+      <li>
+        <a href="#">轮播图列表</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#"><i class="fa-file-zip-o fa"></i>附件管理</a>
+    <ul class="submenu">
+      <li>
+        <a href="#">附件列表</a>
+      </li>
+    </ul>
+  </li>
+
+</ul>
+<script>
+  $(function(){
+    $(".menu>li a").click(function(){
+      $(this).next().toggle(300);
+    })
+  })
+</script>
+</body>
+</html>

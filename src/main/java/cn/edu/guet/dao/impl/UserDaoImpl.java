@@ -11,7 +11,7 @@ public class UserDaoImpl implements IUserDao {
         Connection conn = null;
         String user = "root";// mysql的用户名
         String pwd = "LYHWYZZNSB.wan1/";
-        String url = "jdbc:mysql://123.57.42.220/cxd?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true";String sql = "SELECT password,salt FROM sys_user WHERE name=?";
+        String url = "jdbc:mysql://123.57.42.220/Web?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true";String sql = "SELECT password,salt FROM sys_user WHERE name=?";
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         try {

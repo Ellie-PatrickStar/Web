@@ -17,14 +17,14 @@ public class PasswordEncoder {
 
 	private final static String MD5 = "MD5";
 	private final static String SHA = "SHA";
-	
+
 	private Object salt;
 	private String algorithm;
 
 	public PasswordEncoder(Object salt) {
 		this(salt, MD5);
 	}
-	
+
 	public PasswordEncoder(Object salt, String algorithm) {
 		this.salt = salt;
 		this.algorithm = algorithm;
@@ -76,7 +76,7 @@ public class PasswordEncoder {
 
 	/**
 	 * 转换字节数组为16进制字串
-	 * 
+	 *
 	 * @param b
 	 *            字节数组
 	 * @return 16进制字串
@@ -107,7 +107,7 @@ public class PasswordEncoder {
 		// System.out.println(UUID.randomUUID().toString().replace("-",""));
 		PasswordEncoder encoderMd5 = new PasswordEncoder("6e9e4676d01c434da03d1aaf45c7413e", "MD5");
 
-		String encode = encoderMd5.encode("guet1234");
+		String encode = encoderMd5.encode("zs1234");
 		System.out.println(encode);
 	}
 //	public static void main(String[] args) {
